@@ -1,0 +1,19 @@
+# Ignore everything
+*.v
+*.sv
+*.tcl
+*.sh
+*.svh
+agg_sim
+*.xml
+*.log
+*.params
+*.marker
+*.qip
+*.hpp
+*.txt
+*.ini
+*.out
+*.hex
+*.qsf
+*.ipx
