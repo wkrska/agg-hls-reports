@@ -1,0 +1,1670 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: AggFuncSelectTask"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":168
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: testInputSrcTask"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":287
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"testInputSrcTask.B1"
+          , "data":
+          ["Yes", ">=1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":289
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"User-constrained II."
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 8 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"testInputSrcTask.B2"
+              , "data":
+              ["Yes", "~1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":290
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"II is an approximation due to the following stallable instructions:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Load Operation (%L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                          , "line":"1211"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"298"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Pipe Write Operation (%L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                          , "line":"1211"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"322"
+                        }
+                        , {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                          , "line":"85"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 65536 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: MakeUniqueTask0"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":355
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"MakeUniqueTask0.B1"
+          , "data":
+          ["Yes", "~1", "1"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"356"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"40"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"356"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"56"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"85"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: MapKeyTask0"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":364
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"MapKeyTask0.B1"
+          , "data":
+          ["Yes", "~1", "1"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":69
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"365"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"72"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"365"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"106"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"85"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: TraiageMappingTask0"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":369
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"TraiageMappingTask0.B1"
+          , "data":
+          ["Yes", "~1", "1"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":115
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"370"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"117"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"370"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"136"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"85"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"370"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"138"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"85"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: AggregateTask0"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":375
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"AggregateTask0.B2"
+          , "data":
+          ["No", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":226
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Pipelining disabled"
+            }
+            , {
+              "type":"text"
+              , "text":"Loop not pipelined due to:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"AggregateTask0.B7"
+              , "data":
+              ["No", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":159
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Pipelining disabled"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Loop not pipelined due to:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"II is an approximation due to the following stallable instruction:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                          , "line":"1211"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"376"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"209"
+                        }
+                        , {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                          , "line":"85"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 4 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"AggregateTask0.B6"
+              , "data":
+              ["Yes", "1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":169
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"User-constrained II."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: None"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"AggregateTask0.B3"
+              , "data":
+              ["No", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":226
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Pipelining disabled"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Loop not pipelined due to:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: None"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 4 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ReadoutTask"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":450
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ReadoutTask.B1"
+          , "data":
+          ["Yes", ">=1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":452
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 8 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"ReadoutTask.B3"
+              , "data":
+              ["Yes", "~1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":455
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"II is an approximation due to the following stallable instructions:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Pipe Read Operation (%L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                          , "line":"1211"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"456"
+                        }
+                        , {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Store Operation (%L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                          , "line":"1211"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"464"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 8 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: MergeAndAggregateTask"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":441
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"MergeAndAggregateTask.B2"
+          , "data":
+          ["No", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Pipelining disabled"
+            }
+            , {
+              "type":"text"
+              , "text":"Loop not pipelined due to:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"MergeAndAggregateTask.B11"
+              , "data":
+              ["Yes", "~1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":263
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"II is an approximation due to the following stallable instruction:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                          , "line":"1211"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"442"
+                        }
+                        , {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"374"
+                        }
+                        , {
+                          "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                          , "line":"85"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 8 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"MergeAndAggregateTask.B4"
+              , "data":
+              ["No", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":264
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Pipelining disabled"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Loop not pipelined due to:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: None"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 8 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"MergeAndAggregateTask.B6"
+              , "data":
+              ["No", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":275
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Out-of-order inner loop"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Loop not pipelined due to:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Loop iteration ordering: iterations of inner loop shown may get out of order with respect to the listed inner loop, as the number of iterations of the listed inner loop may be different for different iterations of this loop."
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"MergeAndAggregateTask.B7 (%L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                              , "line":"219"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: n/a"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"MergeAndAggregateTask.B7"
+                  , "data":
+                  ["No", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":219
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Pipelining disabled"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Loop not pipelined due to:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Stallable instruction: None"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Loops"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                        }
+                      ]
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"MergeAndAggregateTask.B8"
+              , "data":
+              ["No", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":331
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Out-of-order inner loop"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Loop not pipelined due to:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Loop iteration ordering: iterations of inner loop shown may get out of order with respect to the listed inner loop, as the number of iterations of the listed inner loop may be different for different iterations of this loop."
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"MergeAndAggregateTask.B10 (%L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                              , "line":"219"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: n/a"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Average Trip count: 4 (exact)"
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Loops"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"MergeAndAggregateTask.B10"
+                  , "data":
+                  ["No", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":219
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Pipelining disabled"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Loop not pipelined due to:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Loop annotated with #pragma disable_loop_pipelining."
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Stallable instruction: None"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Loops"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                        }
+                      ]
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
