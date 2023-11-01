@@ -6,3 +6,8 @@
 /aggv2*/*
 # ... except if theres a folder named reports
 !/aggv2*/reports
+# ... or if it is a particular report (.rpt)
+!/aggv2*/top.fit.finalize.rpt
+!/aggv2*/top.failing_paths.rpt
+!/aggv2*/base.flow.rpt
+!/aggv2*/base.fit.finalize.rpt

@@ -1,0 +1,978 @@
+Fitter Finalize Stage Report for base
+Tue Oct 31 16:01:39 2023
+Quartus Prime Version 21.2.0 Build 72 06/14/2021 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Routing Usage Summary
+  3. Finalize Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------+
+; Routing Usage Summary                                      ;
++-----------------------------+------------------------------+
+; Routing Resource Type       ; Usage                        ;
++-----------------------------+------------------------------+
+; Block Input Mux Wrapbacks   ; 1,426 / 516,600 ( < 1 % )    ;
+; Block Input Muxes           ; 618,189 / 5,658,000 ( 11 % ) ;
+; Block interconnects         ; 490,381 / 6,625,600 ( 7 % )  ;
+; C1 interconnects            ; 247,021 / 2,769,200 ( 9 % )  ;
+; C4 interconnects            ; 284,681 / 2,640,400 ( 11 % ) ;
+; C8 interconnects            ; 15,030 / 264,040 ( 6 % )     ;
+; DCM_muxes                   ; 84 / 824 ( 10 % )            ;
+; DELAY_CHAINs                ; 111 / 17,290 ( < 1 % )       ;
+; Direct links                ; 85,740 / 6,625,600 ( 1 % )   ;
+; HIO Buffers                 ; 902 / 45,920 ( 2 % )         ;
+; Programmable Invert Buffers ; 110 / 480 ( 23 % )           ;
+; Programmable Invert Inputs  ; 25,469 / 513,810 ( 5 % )     ;
+; Programmable Inverts        ; 25,469 / 513,810 ( 5 % )     ;
+; R0 interconnects            ; 363,207 / 4,620,700 ( 8 % )  ;
+; R1 interconnects            ; 188,459 / 2,640,400 ( 7 % )  ;
+; R12 interconnects           ; 9,832 / 396,060 ( 2 % )      ;
+; R2 interconnects            ; 86,164 / 1,324,300 ( 7 % )   ;
+; R4 interconnects            ; 89,971 / 1,332,500 ( 7 % )   ;
+; R6 interconnects            ; 139,013 / 1,336,600 ( 10 % ) ;
+; Redundancy Muxes            ; 1,923 / 90,920 ( 2 % )       ;
+; Row Clock Tap-Offs          ; 18,719 / 396,060 ( 5 % )     ;
+; Switchbox_clock_muxes       ; 491 / 13,440 ( 4 % )         ;
+; VIO Buffers                 ; 2,160 / 19,200 ( 11 % )      ;
+; Vertical_seam_tap_muxes     ; 435 / 6,720 ( 6 % )          ;
++-----------------------------+------------------------------+
+
+
++-------------------+
+; Finalize Messages ;
++-------------------+
+Can't read Quartus Prime message file /tmp/main-d181fb-b14a92/qdb/_compiler/base/_flat/21.2.0/legacy/1/base.fit.finalize.header.qmsgdb.
+Make sure the file exists and is up to date, and you have permission to read and write the file.
+Info (16677): Loading retimed database.
+Info (16734): Loading "final" snapshot for partition "root_partition".
+Info (16734): Loading "final" snapshot for partition "auto_fab_0".
+Info (16734): Loading "final" snapshot for partition "kernel".
+Info (16678): Successfully loaded retimed database: elapsed time is 00:00:09.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/mem/mem_local_reset_combiner/altera_emif_local_reset_combiner_191/synth/altera_emif_local_reset_combiner.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/board/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_kernel_clk_gen/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_kernel_interface_agilex_1/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_memory_bank_divider_ddr4a/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_reset_controller_0/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_reset_controller_global/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_reset_controller_pcie/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/mem/mem_reset_controller_ddr4a/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/mem/altera_reset_controller_1921/synth/altera_reset_controller.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_in_system_sources_probes_0/altera_in_system_sources_probes_1920/synth/altera_in_system_sources_probes.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/board/hs_clk_xer_1931/synth/alt_hiconnect_handshake_clock_crosser.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/board/board_mm_clock_crossing_bridge_0/st_dc_fifo_1940/synth/board_mm_clock_crossing_bridge_0_st_dc_fifo_1940_r4vdppy.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/pcie_ed/pcie_ed_dut/intel_pcie_ptile_avmm_dcore_100/synth/intel_ptile_pcie_avmm.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/mem/mem_clock_cross_pcie_to_ddr4/st_dc_fifo_1940/synth/mem_clock_cross_pcie_to_ddr4_st_dc_fifo_1940_r4vdppy.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/mem/mem_emif_fm_0/altera_emif_arch_fm_191/synth/mem_emif_fm_0_altera_emif_arch_fm_191_jowu3va.sdc". Evaluation of this SDC file will be skipped.
+Warning (19182): The Entity SDC source file cannot be located: "/tmp/main-d181fb-b14a92/ip/pcie_ed/pcie_ed_dut/intel_pcie_ptile_ast_500/synth/intel_ptile_pcie.sdc". Evaluation of this SDC file will be skipped.
+Info (16303): High Performance Effort optimization mode selected -- timing performance will be prioritized at the potential cost of increased compilation time
+Critical Warning (19527): There are 24 unused RX channels and 24 unused TX channels in the design.
+    Info (19528): Add the QSF assignment 'set_instance_assignment -name PRESERVE_UNUSED_XCVR_CHANNEL ON -to <pin_name>' for each unused channel that will be used in future.
+    Info (19529): The above QSF assignment will preserve the performance of specified channels over time.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Warning (18291): Timing characteristics of device AGFB014R24B2E2V are preliminary
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity altera_std_synchronizer
+        Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+    Info (332165): Entity dcfifo_kdi1
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_3v8:dffpipe11|dffe12a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_2v8:dffpipe8|dffe9a* 
+Warning (332173): Ignored filter: *rdptr_g* could not be matched with a clock or keeper or register or port or pin or cell or partition
+Warning (332173): Ignored filter: *ws_dgrp|dffpipe_3v8:dffpipe11|dffe12a* could not be matched with a clock or keeper or register or port or pin or cell or partition
+Warning (332048): Ignored set_false_path: Argument <from> is not an object ID
+Warning (332048): Ignored set_false_path: Argument <to> is not an object ID
+Warning (332173): Ignored filter: *delayed_wrptr_g* could not be matched with a clock or keeper or register or port or pin or cell or partition
+Warning (332173): Ignored filter: *rs_dgwp|dffpipe_2v8:dffpipe8|dffe9a* could not be matched with a clock or keeper or register or port or pin or cell or partition
+Warning (332048): Ignored set_false_path: Argument <from> is not an object ID
+Warning (332048): Ignored set_false_path: Argument <to> is not an object ID
+Info (19539): Reading the HDL-embedded SDC files elapsed 00:00:01.
+Info (332104): Reading SDC File: 'top.sdc'
+Warning (332174): Ignored filter at top.sdc(28): kernel_pll_refclk could not be matched with a port File: /tmp/main-d181fb-b14a92/top.sdc Line: 28
+Warning (332049): Ignored create_clock at top.sdc(28): Argument <targets> is an empty collection File: /tmp/main-d181fb-b14a92/top.sdc Line: 28
+    Info (332050): create_clock -period 100MHz [get_ports kernel_pll_refclk] File: /tmp/main-d181fb-b14a92/top.sdc Line: 28
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ip/board/board_kernel_interface_agilex_1/mem_org_mode_100/synth/mem_org_mode.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_kernel_interface_agilex_1/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance 'board_inst|pcie_ed|dut|dut|ast': 'ip/pcie_ed/pcie_ed_dut/intel_pcie_ptile_ast_500/synth/intel_ptile_pcie.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/pcie_ed/pcie_ed_dut/intel_pcie_ptile_avmm_dcore_100/synth/intel_ptile_pcie_avmm.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/mem/mem_clock_cross_pcie_to_ddr4/st_dc_fifo_1940/synth/mem_clock_cross_pcie_to_ddr4_st_dc_fifo_1940_r4vdppy.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/mem/mem_emif_fm_0/altera_emif_arch_fm_191/synth/mem_emif_fm_0_altera_emif_arch_fm_191_jowu3va.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_memory_bank_divider_ddr4a/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance 'board_inst|ddr4b|local_reset_combiner|local_reset_combiner': 'ip/mem/mem_local_reset_combiner/altera_emif_local_reset_combiner_191/synth/altera_emif_local_reset_combiner.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance 'board_inst|ddr4c|local_reset_combiner|local_reset_combiner': 'ip/mem/mem_local_reset_combiner/altera_emif_local_reset_combiner_191/synth/altera_emif_local_reset_combiner.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance 'board_inst|ddr4d|local_reset_combiner|local_reset_combiner': 'ip/mem/mem_local_reset_combiner/altera_emif_local_reset_combiner_191/synth/altera_emif_local_reset_combiner.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance 'board_inst|ddr4a|local_reset_combiner|local_reset_combiner': 'ip/mem/mem_local_reset_combiner/altera_emif_local_reset_combiner_191/synth/altera_emif_local_reset_combiner.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'mem/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332104): Reading SDC File: 'ip/board/board_kernel_clk_gen/altera_iopll_1931/synth/board_kernel_clk_gen_altera_iopll_1931_poemeeq.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_kernel_clk_gen/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ip/mem/mem_uniphy_status_20nm/uniphy_status_20nm_141/synth/uniphy_status_20nm.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_mm_clock_crossing_bridge_0/st_dc_fifo_1940/synth/board_mm_clock_crossing_bridge_0_st_dc_fifo_1940_r4vdppy.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance 'board_inst|board_in_system_sources_probes_0|board_in_system_sources_probes_0': 'ip/board/board_in_system_sources_probes_0/altera_in_system_sources_probes_1920/synth/altera_in_system_sources_probes.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_reset_controller_global/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_reset_controller_pcie/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/mem/mem_reset_controller_ddr4a/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ip/board/board_pr_region_controller_0/altera_freeze_control_1911/synth/altera_freeze_control.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'ip/board/board_reset_controller_0/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'board/hs_clk_xer_1931/synth/alt_hiconnect_handshake_clock_crosser.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (19294): Synopsys Design Constraints File file not found for instance '': 'board/altera_reset_controller_1921/synth/altera_reset_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332104): Reading SDC File: 'top_post.sdc'
+Warning (19049): The derive_pll_clocks command is not supported in this family.
+    Info (19050): This command is deprecated because all PLL clocks are automatically generated by the SDC files generated alongside the PLL IP. No user action is required.
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Warning (332174): Ignored filter at top_post.sdc(46): board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|xcvr_hip_native|rx_ch15 could not be matched with a clock File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 46
+Warning (332174): Ignored filter at top_post.sdc(31): board_inst|ddr4a|mem_ddr4_ag|emif_fm_0_core_usr_clk could not be matched with a clock File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 31
+Warning (332174): Ignored filter at top_post.sdc(31): board_inst|ddr4b|mem_ddr4_ag|emif_fm_0_core_usr_clk could not be matched with a clock File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 31
+Warning (332174): Ignored filter at top_post.sdc(31): board_inst|ddr4c|mem_ddr4_ag|emif_fm_0_core_usr_clk could not be matched with a clock File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 31
+Warning (332174): Ignored filter at top_post.sdc(31): board_inst|ddr4d|mem_ddr4_ag|emif_fm_0_core_usr_clk could not be matched with a clock File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 31
+Warning (332054): Assignment set_clock_groups is accepted but has some problems at top_post.sdc(31): Argument -group with value [get_clocks {  board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|xcvr_hip_native|rx_ch15  }] contains zero elements File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 31
+    Info (332050): set_clock_groups -asynchronous \
+-group { \
+   config_clk \
+} -group { \
+   DDR4A_REFCLK_p \
+   board_inst|ddr4a|mem_ddr4_ag|emif_fm_0_core_usr_clk \
+} -group { \
+   DDR4B_REFCLK_p \
+   board_inst|ddr4b|mem_ddr4_ag|emif_fm_0_core_usr_clk \
+} -group { \
+   DDR4C_REFCLK_p \
+   board_inst|ddr4c|mem_ddr4_ag|emif_fm_0_core_usr_clk \
+} -group { \
+   DDR4D_REFCLK_p \
+   board_inst|ddr4d|mem_ddr4_ag|emif_fm_0_core_usr_clk \
+} -group [get_clocks { \
+   board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|xcvr_hip_native|rx_ch15 \
+}] -group [get_clocks { \
+   board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_outclk0 \
+   board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_outclk1 \
+}] File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 31
+Warning (332174): Ignored filter at top_post.sdc(60): board_inst|mem|ddr4_calibrate|ddr4_calibrate|sw_reset_n_out could not be matched with a clock or keeper or register or port or pin or cell or partition File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 60
+Warning (332049): Ignored set_false_path at top_post.sdc(60): Argument <from> is not an object ID File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 60
+    Info (332050): set_false_path -from board_inst|mem|ddr4_calibrate|ddr4_calibrate|sw_reset_n_out -to * File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 60
+Warning (332174): Ignored filter at top_post.sdc(69): freeze_wrapper_inst|pr_region_inst|kernel_system_inst|*|twoXclock_consumer_NO_SHIFT_REG could not be matched with a clock or keeper or register or port or pin or cell or partition File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 69
+Warning (332049): Ignored set_false_path at top_post.sdc(69): Argument <to> is not an object ID File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 69
+    Info (332050): set_false_path -from * -to freeze_wrapper_inst|pr_region_inst|kernel_system_inst|*|twoXclock_consumer_NO_SHIFT_REG File: /tmp/main-d181fb-b14a92/top_post.sdc Line: 69
+Critical Warning: Compiling with slowed OpenCL Kernel clock.  This is to help achieve timing closure for board bringup.
+Info (332104): Reading SDC File: 'd:/21.2/de10_agilex/bmc/base/seed26/boardtest/qdb/.t/618994e8ed3.tmp/.temp/sld_fabrics/ipgen/alt_sld_fab_0/alt_sld_fab_0/altera_internal_oscillator_atom_1910/synth/altera_internal_oscillator_atom.sdc'
+Info (332104): Reading SDC File: 'd:/21.2/de10_agilex/bmc/base/seed26/boardtest/qdb/.t/618994e8ed3.tmp/.temp/sld_fabrics/ipgen/alt_sld_fab_0/alt_sld_fab_0/altera_reset_controller_1921/synth/altera_reset_controller.sdc'
+Info (332104): Reading SDC File: 'd:/21.2/de10_agilex/bmc/base/seed26/boardtest/qdb/.t/618994e8ed3.tmp/.temp/sld_fabrics/ipgen/alt_sld_fab_0/alt_sld_fab_0/hs_clk_xer_1931/synth/altera_avalon_st_handshake_clock_crosser.sdc'
+Info (332104): Reading SDC File: 'D:/intelFPGA_pro/21.2/ip/altera/sld/jtag/altera_jtag_wys_atom/default_jtag.sdc'
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: altera_reserved_tck was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|board_in_system_sources_probes_0|board_in_system_sources_probes_0|issp_impl|altsource_probe_body_inst|wider_probe_gen.wider_probe_inst|shift_reg[1] is being clocked by altera_reserved_tck
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Info: Adding default timing constraints to JTAG signals.  This will help to achieve basic functionality since no such constraints were provided by the user.
+Info (19449): Reading SDC files elapsed 00:00:04.
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Warning (332158): Clock uncertainty characteristics of the Agilex device family are preliminary
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[0].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|hdpldadapt_rx_chnl_15~pld_rx_clk1_dcm.reg is being clocked by board_inst|pcie_ed|dut|dut|ast|inst|inst|maib_and_tile|z1565a~pld_pcs_rx_clk_out_ch15.reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg0 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[1].lane_inst|lane_inst~phy_reg1 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~c0cntr_reg
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[4]
+Warning (332060): Node: DDR4C_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[3]
+Warning (332060): Node: board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[4]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[3]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[4]
+Warning (332060): Node: DDR4D_DQS[4] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[4]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[1].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_3~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[3] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[3]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[3].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4C_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[0]
+Warning (332060): Node: DDR4C_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[1]
+Warning (332060): Node: DDR4C_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[2]
+Warning (332060): Node: DDR4C_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[5]
+Warning (332060): Node: DDR4C_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[6]
+Warning (332060): Node: DDR4C_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4c|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4C_DQS[7]
+Warning (332060): Node: DDR4A_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[0]
+Warning (332060): Node: DDR4A_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[1]
+Warning (332060): Node: DDR4A_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[2]
+Warning (332060): Node: board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1~c1cntr_reg
+Warning (332060): Node: DDR4A_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[5]
+Warning (332060): Node: DDR4A_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4A_DQS[6]
+Warning (332060): Node: DDR4A_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4a|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~high_dff_a is being clocked by DDR4A_DQS[7]
+Warning (332060): Node: DDR4B_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[2]
+Warning (332060): Node: DDR4B_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[1]
+Warning (332060): Node: DDR4B_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[6]
+Warning (332060): Node: board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~min_pulse3 is being clocked by board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4B_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[7]
+Warning (332060): Node: DDR4B_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[0]
+Warning (332060): Node: DDR4B_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4b|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4B_DQS[5]
+Warning (332060): Node: DDR4D_DQS[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[0]
+Warning (332060): Node: board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[0].lane_inst|lane_inst~min_pulse2 is being clocked by board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate~c1cntr_reg
+Warning (332060): Node: DDR4D_DQS[1] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[1]
+Warning (332060): Node: DDR4D_DQS[2] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[0].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[2]
+Warning (332060): Node: DDR4D_DQS[5] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[0].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[5]
+Warning (332060): Node: DDR4D_DQS[6] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[1].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[6]
+Warning (332060): Node: DDR4D_DQS[7] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register board_inst|ddr4d|mem_ddr4_ag|emif_fm_0|arch|arch_inst|io_tiles_wrap_inst|io_tiles_inst|tile_gen[2].lane_gen[2].lane_inst|lane_inst~low_dff_a is being clocked by DDR4D_DQS[7]
+Warning (332060): Node: BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|DEV_NUN[1]~reg0 is being clocked by BOARD_INFO_i|CLOCKMEM_inst|CK_1HZ
+Warning (332060): Node: refclk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register BOARD_INFO_i|CLOCKMEM_inst|CLK_DELAY[7] is being clocked by refclk
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 13 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):    4.000 altera_int_osc_clk
+    Info (332111):   30.000 altera_reserved_tck
+    Info (332111):  480.000 board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_m_cnt_clk
+    Info (332111):   20.000 board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_n_cnt_clk
+    Info (332111):    1.666 board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_outclk0
+    Info (332111):    1.666 board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_outclk1
+    Info (332111):   20.000   config_clk
+    Info (332111):   30.000 DDR4A_REFCLK_p
+    Info (332111):   30.000 DDR4B_REFCLK_p
+    Info (332111):   30.000 DDR4C_REFCLK_p
+    Info (332111):   30.000 DDR4D_REFCLK_p
+    Info (332111):   10.000 refclk_pcie_ch0_p
+    Info (332111):   10.000 refclk_pcie_ch2_p
+Info (18258): Fitter Physical Synthesis operations beginning
+Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:05
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:05:30
+
+
