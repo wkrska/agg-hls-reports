@@ -1,19 +1,8 @@
 # Ignore everything
-*.v
-*.sv
-*.tcl
-*.sh
-*.svh
-agg_sim
-*.xml
-*.log
-*.params
-*.marker
-*.qip
-*.hpp
-*.txt
-*.ini
-*.out
-*.hex
-*.qsf
-*.ipx
+/*
+# except folders starting with aggv2...
+!/aggv2*/
+# ignore all the contents of those folders
+/aggv2*/*
+# ... except if theres a folder named reports
+!/aggv2*/reports
