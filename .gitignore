@@ -1,13 +1,13 @@
 # Ignore everything
 /*
 # except folders starting with aggv2...
-!/aggv2*/
+!/agg_*/
 # ignore all the contents of those folders
-/aggv2*/*
+/agg_*/*
 # ... except if theres a folder named reports
-!/aggv2*/reports
+!/agg_*/reports
 # ... or if it is a particular report (.rpt)
-!/aggv2*/top.fit.finalize.rpt
-!/aggv2*/top.failing_paths.rpt
-!/aggv2*/base.flow.rpt
-!/aggv2*/base.fit.finalize.rpt
+!/agg_*/top.fit.finalize.rpt
+!/agg_*/top.failing_paths.rpt
+!/agg_*/base.flow.rpt
+!/agg_*/base.fit.finalize.rpt

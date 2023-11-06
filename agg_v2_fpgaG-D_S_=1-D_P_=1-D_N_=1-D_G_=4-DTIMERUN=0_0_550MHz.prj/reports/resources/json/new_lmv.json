@@ -1,0 +1,3652 @@
+{
+  "nodes":
+  [
+    {
+      "name":"testInputSrcTask"
+      , "id":913
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":914
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"bundle"
+              , "id":915
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                          , "line":"292"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":292
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"MakeUniqueTask0"
+      , "id":916
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":917
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"iBundle"
+              , "id":918
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"40"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":40
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"oBundle"
+              , "id":919
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"46"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":46
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"MapKeyTask0"
+      , "id":920
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":921
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"__camKey"
+              , "id":922
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"67"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":67
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__camValid"
+              , "id":923
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"67"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":67
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"iBundle"
+              , "id":924
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"72"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":72
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"oBundle"
+              , "id":925
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"78"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":78
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"idxOut"
+              , "id":926
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"84"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":84
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"mappedOut"
+              , "id":927
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"85"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"TraiageMappingTask0"
+      , "id":928
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":929
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"inBundle"
+              , "id":930
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"117"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":117
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"goodBundle"
+              , "id":931
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"118"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":118
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"badBundle"
+              , "id":932
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"119"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":119
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"AggregateTask0"
+      , "id":933
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":934
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"__table"
+              , "id":935
+              , "brief":"Implemented size:64 bytes = (4 words per bank) x (16 bytes per word) | Memory Usage:4 RAMs | Number of banks:1 | Bank width (word size):16 bytes | Bank depth:4 words | Number of replicates:1 | Number of private copies:1 | RAM Mode:Simple dual-port | Pump configuration:Single-pumped | User defined attributes:memory(BLOCK_RAM), singlepump, simple_dual_port"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"155"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"64 bytes"
+                  , "Implemented size":"64 bytes = (4 words per bank) x (16 bytes per word)"
+                  , "Memory Usage":"4 RAMs"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"16 bytes"
+                  , "Bank depth":"4 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "RAM Mode":"Simple dual-port"
+                  , "Pump configuration":"Single-pumped"
+                  , "Additional information":"In each private copy:</br>  Variable '__table' occupies memory words [0-3] and has 1 array element per memory word."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td></td><td></td><td></td><td></td></tr></table>"
+                  , "User defined attributes":"memory(BLOCK_RAM), singlepump, simple_dual_port"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Kernel Memory"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/kernel-memory.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":155
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":941
+                  , "brief":"Memory Usage:4 RAMs | Bank width:16 bytes | Bank depth:4 words | Implemented bank size:64 bytes = (4 words) x (16 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"4 RAMs"
+                      , "Bank width":"16 bytes"
+                      , "Bank depth":"4 words"
+                      , "Implemented bank size":"64 bytes = (4 words) x (16 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable '__table' occupies memory words [0-3] and has 1 array element per memory word."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":155
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":942
+                      , "padding":"0"
+                      , "depth":"4"
+                      , "brief":"Implemented size:64 bytes = (4 words) x (16 bytes per word) | Memory Usage:4 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"64 bytes = (4 words) x (16 bytes per word)"
+                          , "Memory Usage":"4 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable '__table' occupies memory words [0-3] and has 1 array element per memory word."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":155
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":943
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":945
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"16 bytes"
+                            , "Depth per copy (including padding)":"4 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable '__table' occupies memory words [0-3] and has 1 array element per memory word."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"__deferred"
+              , "id":947
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"155"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":155
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__deferredIdx"
+              , "id":948
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"155"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":155
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"iBundle"
+              , "id":949
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"175"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":175
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"tuples"
+              , "id":950
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"205"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":205
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"update"
+              , "id":951
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                          , "line":"253"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":253
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"frwd"
+              , "id":952
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                          , "line":"256"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":256
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"frwdVal"
+              , "id":953
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                          , "line":"257"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":257
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":936
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:__table | Start cycle:5 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"__table"
+              , "Start cycle":"5"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                      , "line":"283"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"192"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"376"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":283
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":937
+          , "brief":"Width:128 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:__table | Start cycle:2 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"__table"
+              , "Start cycle":"2"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                      , "line":"326"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"206"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"376"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":326
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":938
+          , "brief":"Width:32 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:__table | Start cycle:4 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"__table"
+              , "Start cycle":"4"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                      , "line":"326"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"206"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"376"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":326
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":939
+          , "brief":"Width:128 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:__table | Start cycle:2 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"__table"
+              , "Start cycle":"2"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                      , "line":"233"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"161"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"376"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":233
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":940
+          , "brief":"Width:128 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:__table | Start cycle:5 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"__table"
+              , "Start cycle":"5"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                      , "line":"295"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"192"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"376"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":295
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"SHARE"
+          , "id":944
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":946
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+      ]
+    }
+    , {
+      "name":"MergeAndAggregateTask"
+      , "id":954
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":955
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"table"
+              , "id":956
+              , "brief":"Implemented size:128 bytes = (8 banks) x (2 words per bank) x (8 bytes per word) | Memory Usage:16 RAMs | Number of banks:8 | Bank width (word size):8 bytes | Bank depth:2 words | Number of replicates:1 | Number of private copies:1 | RAM Mode:Simple dual-port | Pump configuration:Single-pumped | User defined attributes:memory(BLOCK_RAM), singlepump, simple_dual_port"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"258"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"128 bytes"
+                  , "Implemented size":"128 bytes = (8 banks) x (2 words per bank) x (8 bytes per word)"
+                  , "Memory Usage":"16 RAMs"
+                  , "Number of banks":"8"
+                  , "Bank width (word size)":"8 bytes"
+                  , "Bank depth":"2 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "RAM Mode":"Simple dual-port"
+                  , "Pump configuration":"Single-pumped"
+                  , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                  , "User defined attributes":"memory(BLOCK_RAM), singlepump, simple_dual_port"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Kernel Memory"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/kernel-memory.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":258
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":972
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":973
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":974
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":976
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 1"
+                  , "id":978
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":979
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":980
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":982
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 2"
+                  , "id":984
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":985
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":986
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":988
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 3"
+                  , "id":990
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":991
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":992
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":994
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 4"
+                  , "id":996
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":997
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":998
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":1000
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 5"
+                  , "id":1002
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":1003
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":1004
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":1006
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 6"
+                  , "id":1008
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":1009
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":1010
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":1012
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 7"
+                  , "id":1014
+                  , "brief":"Memory Usage:2 RAMs | Bank width:8 bytes | Bank depth:2 words | Implemented bank size:16 bytes = (2 words) x (8 bytes per word)"
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"2 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"2 words"
+                      , "Implemented bank size":"16 bytes = (2 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":258
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":1015
+                      , "padding":"0"
+                      , "depth":"2"
+                      , "brief":"Implemented size:16 bytes = (2 words) x (8 bytes per word) | Memory Usage:2 RAMs"
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"16 bytes = (2 words) x (8 bytes per word)"
+                          , "Memory Usage":"2 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":258
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":1016
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":1018
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy (including padding)":"2 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'table' occupies memory words [0-15] and has 1 array element split across 2 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>6</sub></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr><tr><td>Bank bits</td><td></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"eof"
+              , "id":1020
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"273"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":273
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"bundle"
+              , "id":1021
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                          , "line":"283"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":283
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":957
+          , "brief":"Width:32 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:2 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"2"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"222"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"313"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":222
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":958
+          , "brief":"Width:32 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:7 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"7"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"222"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"313"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":222
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":959
+          , "brief":"Width:32 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:2 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"2"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"222"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"360"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":222
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":960
+          , "brief":"Width:32 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:7 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"7"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"222"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"360"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":222
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":961
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:4 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"366"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":366
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":962
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:4 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"366"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":366
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":963
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:1 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"1"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"222"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"313"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":222
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":964
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Loads from:table | Start cycle:1 | Latency:4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"table"
+              , "Start cycle":"1"
+              , "Latency":"4"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"222"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"360"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":222
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":965
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:table | Start cycle:2 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"table"
+              , "Start cycle":"2"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"267"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":267
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":966
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:table | Start cycle:2 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"table"
+              , "Start cycle":"2"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"267"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":267
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":967
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:table | Start cycle:6 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"table"
+              , "Start cycle":"6"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"237"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"313"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":968
+          , "brief":"Width:64 bits | Stall-free:No | Type:Pipelined | Stores to:table | Start cycle:11 | Latency:7"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"No"
+              , "Type":"Pipelined"
+              , "Stores to":"table"
+              , "Start cycle":"11"
+              , "Latency":"7"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"237"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"313"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":969
+          , "brief":"Width:64 bits | Stall-free:No | Type:Pipelined | Stores to:table | Start cycle:11 | Latency:7"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"No"
+              , "Type":"Pipelined"
+              , "Stores to":"table"
+              , "Start cycle":"11"
+              , "Latency":"7"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"226"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"313"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":226
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":970
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:table | Start cycle:1 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"table"
+              , "Start cycle":"1"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"237"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"360"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":971
+          , "brief":"Width:64 bits | Stall-free:Yes | Type:Pipelined never-stall | Stores to:table | Start cycle:7 | Latency:1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"table"
+              , "Start cycle":"7"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"237"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                      , "line":"360"
+                    }
+                    , {
+                      "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                      , "line":"442"
+                    }
+                    , {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.0/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"SHARE"
+          , "id":975
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":977
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":981
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"ARB"
+          , "id":983
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":987
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":989
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":993
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"ARB"
+          , "id":995
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":999
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":1001
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":1005
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"ARB"
+          , "id":1007
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":1011
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":1013
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":1017
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"ARB"
+          , "id":1019
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"arb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":943
+      , "to":944
+    }
+    , {
+      "from":944
+      , "to":936
+    }
+    , {
+      "from":944
+      , "to":937
+    }
+    , {
+      "from":944
+      , "to":938
+    }
+    , {
+      "from":946
+      , "to":945
+    }
+    , {
+      "from":939
+      , "to":946
+    }
+    , {
+      "from":940
+      , "to":946
+    }
+    , {
+      "from":974
+      , "to":975
+    }
+    , {
+      "from":975
+      , "to":957
+    }
+    , {
+      "from":975
+      , "to":958
+    }
+    , {
+      "from":975
+      , "to":959
+    }
+    , {
+      "from":975
+      , "to":960
+    }
+    , {
+      "from":975
+      , "to":961
+    }
+    , {
+      "from":977
+      , "to":976
+    }
+    , {
+      "from":965
+      , "to":977
+    }
+    , {
+      "from":967
+      , "to":977
+    }
+    , {
+      "from":970
+      , "to":977
+    }
+    , {
+      "from":980
+      , "to":981
+    }
+    , {
+      "from":981
+      , "to":962
+    }
+    , {
+      "from":981
+      , "to":963
+    }
+    , {
+      "from":981
+      , "to":964
+    }
+    , {
+      "from":983
+      , "to":982
+    }
+    , {
+      "from":966
+      , "to":983
+    }
+    , {
+      "from":968
+      , "to":983
+    }
+    , {
+      "from":969
+      , "to":983
+    }
+    , {
+      "from":971
+      , "to":983
+    }
+    , {
+      "from":986
+      , "to":987
+    }
+    , {
+      "from":987
+      , "to":957
+    }
+    , {
+      "from":987
+      , "to":958
+    }
+    , {
+      "from":987
+      , "to":959
+    }
+    , {
+      "from":987
+      , "to":960
+    }
+    , {
+      "from":987
+      , "to":961
+    }
+    , {
+      "from":989
+      , "to":988
+    }
+    , {
+      "from":965
+      , "to":989
+    }
+    , {
+      "from":967
+      , "to":989
+    }
+    , {
+      "from":970
+      , "to":989
+    }
+    , {
+      "from":992
+      , "to":993
+    }
+    , {
+      "from":993
+      , "to":962
+    }
+    , {
+      "from":993
+      , "to":963
+    }
+    , {
+      "from":993
+      , "to":964
+    }
+    , {
+      "from":995
+      , "to":994
+    }
+    , {
+      "from":966
+      , "to":995
+    }
+    , {
+      "from":968
+      , "to":995
+    }
+    , {
+      "from":969
+      , "to":995
+    }
+    , {
+      "from":971
+      , "to":995
+    }
+    , {
+      "from":998
+      , "to":999
+    }
+    , {
+      "from":999
+      , "to":957
+    }
+    , {
+      "from":999
+      , "to":958
+    }
+    , {
+      "from":999
+      , "to":959
+    }
+    , {
+      "from":999
+      , "to":960
+    }
+    , {
+      "from":999
+      , "to":961
+    }
+    , {
+      "from":1001
+      , "to":1000
+    }
+    , {
+      "from":965
+      , "to":1001
+    }
+    , {
+      "from":967
+      , "to":1001
+    }
+    , {
+      "from":970
+      , "to":1001
+    }
+    , {
+      "from":1004
+      , "to":1005
+    }
+    , {
+      "from":1005
+      , "to":962
+    }
+    , {
+      "from":1005
+      , "to":963
+    }
+    , {
+      "from":1005
+      , "to":964
+    }
+    , {
+      "from":1007
+      , "to":1006
+    }
+    , {
+      "from":966
+      , "to":1007
+    }
+    , {
+      "from":968
+      , "to":1007
+    }
+    , {
+      "from":969
+      , "to":1007
+    }
+    , {
+      "from":971
+      , "to":1007
+    }
+    , {
+      "from":1010
+      , "to":1011
+    }
+    , {
+      "from":1011
+      , "to":957
+    }
+    , {
+      "from":1011
+      , "to":958
+    }
+    , {
+      "from":1011
+      , "to":959
+    }
+    , {
+      "from":1011
+      , "to":960
+    }
+    , {
+      "from":1011
+      , "to":961
+    }
+    , {
+      "from":1013
+      , "to":1012
+    }
+    , {
+      "from":965
+      , "to":1013
+    }
+    , {
+      "from":967
+      , "to":1013
+    }
+    , {
+      "from":970
+      , "to":1013
+    }
+    , {
+      "from":1016
+      , "to":1017
+    }
+    , {
+      "from":1017
+      , "to":962
+    }
+    , {
+      "from":1017
+      , "to":963
+    }
+    , {
+      "from":1017
+      , "to":964
+    }
+    , {
+      "from":1019
+      , "to":1018
+    }
+    , {
+      "from":966
+      , "to":1019
+    }
+    , {
+      "from":968
+      , "to":1019
+    }
+    , {
+      "from":969
+      , "to":1019
+    }
+    , {
+      "from":971
+      , "to":1019
+    }
+  ]
+}
