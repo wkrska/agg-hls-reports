@@ -1,0 +1,4278 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"MakeUniqueTask0"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"MakeUniqueTask0.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"MakeUniqueTask0.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":5
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":69
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"192 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":7
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":9
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":26
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"10"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":10
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":11
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE0_clES2_E15MakeUniqueTask0_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":12
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":333
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":13
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":333
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":14
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":333
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":15
+      , "name":"MapKeyTask0"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":16
+          , "name":"MapKeyTask0.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":17
+          , "name":"MapKeyTask0.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":18
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":69
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":19
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"23"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":21
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":53
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"22"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":22
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"23"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"23"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":23
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE1_clES2_E11MapKeyTask0_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":24
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":342
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":25
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":342
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":26
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":342
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":27
+      , "name":"TraiageMappingTask0"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":28
+          , "name":"TraiageMappingTask0.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":29
+          , "name":"TraiageMappingTask0.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":30
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":69
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":31
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":33
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":35
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":94
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"36"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":36
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":37
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE2_clES2_E19TraiageMappingTask0_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":38
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":347
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":39
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":347
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":40
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":347
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":41
+      , "name":"AggregateTask0"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":42
+          , "name":"AggregateTask0.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":43
+          , "name":"AggregateTask0.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":44
+          , "name":"AggregateTask0.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"6"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"43"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":45
+          , "name":"AggregateTask0.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":50
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":150
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"__table"
+                  , "Start Cycle":"2"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":58
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"59"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":59
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"7"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"7"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":46
+          , "name":"AggregateTask0.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":47
+          , "name":"AggregateTask0.B5"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"5"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":48
+          , "name":"AggregateTask0.B6"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":51
+              , "name":"Non-Blocking Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":32
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"Yes"
+                  , "Start Cycle":"4"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":52
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":271
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"__table"
+                  , "Start Cycle":"5"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":53
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":283
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"__table"
+                  , "Start Cycle":"5"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":60
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":155
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"61"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":61
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"10"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"10"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":49
+          , "name":"AggregateTask0.B7"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":54
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":315
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"__table"
+                  , "Start Cycle":"2"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":55
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":315
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"__table"
+                  , "Start Cycle":"4"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":56
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Depth":"25"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"10"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":62
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":141
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"63"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":63
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"10"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"10"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":64
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":65
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":353
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":66
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":353
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":67
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":353
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":68
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":69
+              , "name":"__table"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"stages.h"
+                    , "line":136
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"64 bytes"
+                  , "Implemented size":"64 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"128 bits"
+                  , "Bank depth":"4 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Kernel Memory"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/kernel-memory.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":75
+      , "name":"ReadoutTask"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":76
+          , "name":"ReadoutTask.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":77
+          , "name":"ReadoutTask.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"2"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"78"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":78
+          , "name":"ReadoutTask.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+              , "II":"2"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":79
+          , "name":"ReadoutTask.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":81
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":69
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Depth":"4"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"15"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":83
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":442
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Stores to":"_arg_testOutput_device"
+                  , "Start Cycle":"19"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":84
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":433
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"85"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":85
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"21"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"21"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":80
+          , "name":"ReadoutTask.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":86
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":87
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":428
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":88
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":428
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":89
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":428
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":90
+              , "name":"arg_testOutput_device"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":428
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Stable":"No"
+                  , "Width":"64 bits"
+                  , "Kernel":"ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask"
+                  , "Alignment":"1024"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":92
+      , "name":"testInputSrcTask"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":93
+          , "name":"testInputSrcTask.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":94
+          , "name":"testInputSrcTask.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"2"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 2. See Loops Analysis for more information."
+              , "Loops To":"94"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":95
+          , "name":"testInputSrcTask.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"5"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":96
+          , "name":"testInputSrcTask.B3"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"98"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":97
+          , "name":"testInputSrcTask.B4"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":100
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":275
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"1045"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":101
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"192 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"1065"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":102
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":267
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"103"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":103
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"1065"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1065"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":98
+          , "name":"testInputSrcTask.B5"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+              , "II":"1"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":99
+          , "name":"testInputSrcTask.B6"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":104
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":105
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":264
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":106
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":264
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":107
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":264
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":108
+              , "name":"arg_agg_ops"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":264
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Stable":"No"
+                  , "Width":"160 bits"
+                  , "Kernel":"ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask"
+                }
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":109
+              , "name":"arg_testInput_device"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":264
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Stable":"No"
+                  , "Width":"64 bits"
+                  , "Kernel":"ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask"
+                  , "Alignment":"1024"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":110
+      , "name":"MergeAndAggregateTask"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":111
+          , "name":"MergeAndAggregateTask.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":112
+          , "name":"MergeAndAggregateTask.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":113
+          , "name":"MergeAndAggregateTask.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"112"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":114
+          , "name":"MergeAndAggregateTask.B3"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":115
+          , "name":"MergeAndAggregateTask.B4"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":125
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":250
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"2"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":126
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":250
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"2"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":145
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":249
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"146"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":146
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"7"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"7"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":116
+          , "name":"MergeAndAggregateTask.B5"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"5"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":117
+          , "name":"MergeAndAggregateTask.B6"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":127
+              , "name":"Non-Blocking Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":32
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"224 bits"
+                  , "Depth":"16"
+                  , "Stall-free":"Yes"
+                  , "Start Cycle":"2"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":147
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":261
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"158"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":148
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"6"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":118
+          , "name":"MergeAndAggregateTask.B7"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":128
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":152
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"2"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":129
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"2"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":130
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"7"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":149
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":210
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"150"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":150
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"17"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"17"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":119
+          , "name":"MergeAndAggregateTask.B8"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":131
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":69
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Depth":"25"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"1"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":151
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":312
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"160"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":152
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"6"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":120
+          , "name":"MergeAndAggregateTask.B9"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":121
+          , "name":"MergeAndAggregateTask.B10"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":132
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":152
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"2"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":133
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"2"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":134
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"7"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":153
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":210
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"154"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":154
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"17"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"17"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":122
+          , "name":"MergeAndAggregateTask.B11"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":135
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":347
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"4"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":136
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":347
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"4"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":137
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Depth":"4"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"13"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Pipes"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/pipes.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":155
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":248
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"156"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":156
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"13"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"13"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":123
+          , "name":"MergeAndAggregateTask.B12"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":138
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"1"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":139
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":226
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":140
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":226
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Stores to":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":141
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":217
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Stores to":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":157
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":158
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"18"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"18"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":124
+          , "name":"MergeAndAggregateTask.B13"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":142
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"table"
+                  , "Start Cycle":"1"
+                  , "Latency":"5"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":143
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":226
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"7"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":144
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":226
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"table"
+                  , "Start Cycle":"7"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":159
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":160
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"12"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"12"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"csr"
+          , "id":161
+          , "name":"Register Map"
+          , "debug":
+          [
+            [
+              {
+                "filename":"agg_overload_v4_1_fpgaG_D_S__1_D_P__1_D_N__1_D_G__4_DTIMERUN_0_0_650MHz.prj/ZTSZZ4mainENKUlRN4sycl3_V17handlerEE4_clES2_E21MergeAndAggregateTask_csr.hpp"
+                , "line":1
+              }
+            ]
+          ]
+          , "children":
+          [
+            {
+              "type":"interface"
+              , "id":162
+              , "name":"start"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":419
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":163
+              , "name":"done"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":419
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"interface"
+              , "id":164
+              , "name":"busy"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":419
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":165
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":166
+              , "name":"table"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"stages.h"
+                    , "line":246
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"64 bytes"
+                  , "Implemented size":"64 bytes"
+                  , "Number of banks":"8"
+                  , "Bank width":"64 bits"
+                  , "Bank depth":"1 word"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Kernel Memory"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/kernel-memory.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"memtype"
+      , "id":1
+      , "name":"Global Memory"
+      , "children":
+      [
+        {
+          "type":"memsys"
+          , "id":91
+          , "name":"DDR"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Number of banks":"4"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":6
+      , "name":"_pipe0_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":333
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"192 bits"
+          , "Depth":"16"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":8
+      , "name":"_pipe1_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":333
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"224 bits"
+          , "Depth":"16"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":20
+      , "name":"_pipe2_0A"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":342
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"224 bits"
+          , "Depth":"16"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":32
+      , "name":"_pipe2_0B"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":347
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"224 bits"
+          , "Depth":"16"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":34
+      , "name":"_pipe2_0C"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":347
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"224 bits"
+          , "Depth":"16"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":57
+      , "name":"_pipe3_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":353
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"128 bits"
+          , "Depth":"25"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":82
+      , "name":"_pipe6"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+            , "line":428
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"128 bits"
+          , "Depth":"4"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":6
+      , "to":5
+    }
+    , {
+      "from":7
+      , "to":8
+    }
+    , {
+      "from":12
+      , "to":3
+    }
+    , {
+      "from":3
+      , "to":14
+      , "reverse":2
+    }
+    , {
+      "from":10
+      , "to":9
+    }
+    , {
+      "from":3
+      , "to":9
+    }
+    , {
+      "from":5
+      , "to":10
+    }
+    , {
+      "from":7
+      , "to":10
+    }
+    , {
+      "from":9
+      , "to":5
+    }
+    , {
+      "from":5
+      , "to":7
+    }
+    , {
+      "from":8
+      , "to":18
+    }
+    , {
+      "from":19
+      , "to":20
+    }
+    , {
+      "from":24
+      , "to":16
+    }
+    , {
+      "from":16
+      , "to":26
+      , "reverse":2
+    }
+    , {
+      "from":22
+      , "to":21
+    }
+    , {
+      "from":16
+      , "to":21
+    }
+    , {
+      "from":18
+      , "to":22
+    }
+    , {
+      "from":19
+      , "to":22
+    }
+    , {
+      "from":21
+      , "to":18
+    }
+    , {
+      "from":18
+      , "to":19
+    }
+    , {
+      "from":20
+      , "to":30
+    }
+    , {
+      "from":31
+      , "to":32
+    }
+    , {
+      "from":33
+      , "to":34
+    }
+    , {
+      "from":38
+      , "to":28
+    }
+    , {
+      "from":28
+      , "to":40
+      , "reverse":2
+    }
+    , {
+      "from":36
+      , "to":35
+    }
+    , {
+      "from":28
+      , "to":35
+    }
+    , {
+      "from":30
+      , "to":36
+    }
+    , {
+      "from":31
+      , "to":36
+    }
+    , {
+      "from":33
+      , "to":36
+    }
+    , {
+      "from":35
+      , "to":30
+    }
+    , {
+      "from":30
+      , "to":31
+    }
+    , {
+      "from":30
+      , "to":33
+    }
+    , {
+      "from":32
+      , "to":51
+    }
+    , {
+      "from":56
+      , "to":57
+    }
+    , {
+      "from":65
+      , "to":42
+    }
+    , {
+      "from":42
+      , "to":67
+      , "reverse":2
+    }
+    , {
+      "from":69
+      , "to":55
+    }
+    , {
+      "from":69
+      , "to":54
+    }
+    , {
+      "from":69
+      , "to":52
+    }
+    , {
+      "from":50
+      , "to":69
+    }
+    , {
+      "from":53
+      , "to":69
+    }
+    , {
+      "from":63
+      , "to":43
+    }
+    , {
+      "from":43
+      , "to":44
+    }
+    , {
+      "from":42
+      , "to":44
+    }
+    , {
+      "from":59
+      , "to":58
+    }
+    , {
+      "from":44
+      , "to":58
+    }
+    , {
+      "from":50
+      , "to":59
+    }
+    , {
+      "from":59
+      , "to":46
+    }
+    , {
+      "from":61
+      , "to":47
+    }
+    , {
+      "from":61
+      , "to":60
+    }
+    , {
+      "from":46
+      , "to":60
+    }
+    , {
+      "from":52
+      , "to":61
+    }
+    , {
+      "from":53
+      , "to":61
+    }
+    , {
+      "from":63
+      , "to":62
+    }
+    , {
+      "from":47
+      , "to":62
+    }
+    , {
+      "from":55
+      , "to":63
+    }
+    , {
+      "from":56
+      , "to":63
+    }
+    , {
+      "from":58
+      , "to":50
+    }
+    , {
+      "from":60
+      , "to":51
+    }
+    , {
+      "from":51
+      , "to":52
+    }
+    , {
+      "from":60
+      , "to":53
+    }
+    , {
+      "from":62
+      , "to":54
+    }
+    , {
+      "from":54
+      , "to":55
+    }
+    , {
+      "from":55
+      , "to":56
+    }
+    , {
+      "from":82
+      , "to":81
+    }
+    , {
+      "from":87
+      , "to":76
+    }
+    , {
+      "from":80
+      , "to":88
+    }
+    , {
+      "from":76
+      , "to":89
+      , "reverse":2
+    }
+    , {
+      "from":90
+      , "to":84
+    }
+    , {
+      "from":78
+      , "to":77
+    }
+    , {
+      "from":76
+      , "to":77
+    }
+    , {
+      "from":85
+      , "to":78
+    }
+    , {
+      "from":85
+      , "to":84
+    }
+    , {
+      "from":77
+      , "to":84
+    }
+    , {
+      "from":81
+      , "to":85
+    }
+    , {
+      "from":83
+      , "to":85
+    }
+    , {
+      "from":78
+      , "to":80
+    }
+    , {
+      "from":84
+      , "to":81
+    }
+    , {
+      "from":81
+      , "to":83
+    }
+    , {
+      "from":83
+      , "to":91
+    }
+    , {
+      "from":101
+      , "to":6
+    }
+    , {
+      "from":105
+      , "to":93
+    }
+    , {
+      "from":99
+      , "to":106
+    }
+    , {
+      "from":93
+      , "to":107
+      , "reverse":2
+    }
+    , {
+      "from":108
+      , "to":94
+    }
+    , {
+      "from":109
+      , "to":102
+    }
+    , {
+      "from":94
+      , "to":94
+    }
+    , {
+      "from":93
+      , "to":94
+    }
+    , {
+      "from":94
+      , "to":95
+    }
+    , {
+      "from":98
+      , "to":96
+    }
+    , {
+      "from":95
+      , "to":96
+    }
+    , {
+      "from":103
+      , "to":102
+    }
+    , {
+      "from":96
+      , "to":102
+    }
+    , {
+      "from":100
+      , "to":103
+    }
+    , {
+      "from":101
+      , "to":103
+    }
+    , {
+      "from":103
+      , "to":98
+    }
+    , {
+      "from":98
+      , "to":99
+    }
+    , {
+      "from":102
+      , "to":100
+    }
+    , {
+      "from":100
+      , "to":101
+    }
+    , {
+      "from":91
+      , "to":100
+    }
+    , {
+      "from":34
+      , "to":127
+    }
+    , {
+      "from":57
+      , "to":131
+    }
+    , {
+      "from":137
+      , "to":82
+    }
+    , {
+      "from":162
+      , "to":111
+    }
+    , {
+      "from":111
+      , "to":164
+      , "reverse":2
+    }
+    , {
+      "from":166
+      , "to":129
+    }
+    , {
+      "from":166
+      , "to":130
+    }
+    , {
+      "from":166
+      , "to":133
+    }
+    , {
+      "from":166
+      , "to":134
+    }
+    , {
+      "from":166
+      , "to":135
+    }
+    , {
+      "from":166
+      , "to":136
+    }
+    , {
+      "from":166
+      , "to":138
+    }
+    , {
+      "from":166
+      , "to":142
+    }
+    , {
+      "from":143
+      , "to":166
+    }
+    , {
+      "from":125
+      , "to":166
+    }
+    , {
+      "from":139
+      , "to":166
+    }
+    , {
+      "from":140
+      , "to":166
+    }
+    , {
+      "from":141
+      , "to":166
+    }
+    , {
+      "from":126
+      , "to":166
+    }
+    , {
+      "from":128
+      , "to":166
+    }
+    , {
+      "from":132
+      , "to":166
+    }
+    , {
+      "from":144
+      , "to":166
+    }
+    , {
+      "from":156
+      , "to":112
+    }
+    , {
+      "from":112
+      , "to":113
+    }
+    , {
+      "from":111
+      , "to":113
+    }
+    , {
+      "from":146
+      , "to":114
+    }
+    , {
+      "from":146
+      , "to":145
+    }
+    , {
+      "from":113
+      , "to":145
+    }
+    , {
+      "from":125
+      , "to":146
+    }
+    , {
+      "from":126
+      , "to":146
+    }
+    , {
+      "from":158
+      , "to":116
+    }
+    , {
+      "from":158
+      , "to":147
+    }
+    , {
+      "from":114
+      , "to":147
+    }
+    , {
+      "from":127
+      , "to":148
+    }
+    , {
+      "from":150
+      , "to":149
+    }
+    , {
+      "from":148
+      , "to":149
+    }
+    , {
+      "from":128
+      , "to":150
+    }
+    , {
+      "from":130
+      , "to":150
+    }
+    , {
+      "from":160
+      , "to":151
+    }
+    , {
+      "from":116
+      , "to":151
+    }
+    , {
+      "from":131
+      , "to":152
+    }
+    , {
+      "from":160
+      , "to":120
+    }
+    , {
+      "from":154
+      , "to":153
+    }
+    , {
+      "from":152
+      , "to":153
+    }
+    , {
+      "from":132
+      , "to":154
+    }
+    , {
+      "from":134
+      , "to":154
+    }
+    , {
+      "from":156
+      , "to":155
+    }
+    , {
+      "from":120
+      , "to":155
+    }
+    , {
+      "from":135
+      , "to":156
+    }
+    , {
+      "from":136
+      , "to":156
+    }
+    , {
+      "from":137
+      , "to":156
+    }
+    , {
+      "from":150
+      , "to":157
+    }
+    , {
+      "from":138
+      , "to":158
+    }
+    , {
+      "from":139
+      , "to":158
+    }
+    , {
+      "from":140
+      , "to":158
+    }
+    , {
+      "from":141
+      , "to":158
+    }
+    , {
+      "from":154
+      , "to":159
+    }
+    , {
+      "from":143
+      , "to":160
+    }
+    , {
+      "from":144
+      , "to":160
+    }
+    , {
+      "from":145
+      , "to":125
+    }
+    , {
+      "from":145
+      , "to":126
+    }
+    , {
+      "from":147
+      , "to":127
+    }
+    , {
+      "from":149
+      , "to":128
+    }
+    , {
+      "from":149
+      , "to":129
+    }
+    , {
+      "from":129
+      , "to":130
+    }
+    , {
+      "from":151
+      , "to":131
+    }
+    , {
+      "from":153
+      , "to":132
+    }
+    , {
+      "from":153
+      , "to":133
+    }
+    , {
+      "from":133
+      , "to":134
+    }
+    , {
+      "from":155
+      , "to":135
+    }
+    , {
+      "from":155
+      , "to":136
+    }
+    , {
+      "from":135
+      , "to":137
+    }
+    , {
+      "from":136
+      , "to":137
+    }
+    , {
+      "from":157
+      , "to":138
+    }
+    , {
+      "from":157
+      , "to":139
+    }
+    , {
+      "from":138
+      , "to":140
+    }
+    , {
+      "from":139
+      , "to":140
+    }
+    , {
+      "from":138
+      , "to":141
+    }
+    , {
+      "from":139
+      , "to":141
+    }
+    , {
+      "from":159
+      , "to":142
+    }
+    , {
+      "from":159
+      , "to":143
+    }
+    , {
+      "from":142
+      , "to":144
+    }
+  ]
+}

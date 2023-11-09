@@ -1,0 +1,745 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"__table"
+      , "id":1013
+      , "src":"336"
+      , "dst":"414"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"AggregateTask0.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"__table"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                  , "line":"136"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"526.5"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"271"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"271"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"271"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"131"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Xor(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"131"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"And(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/lib/oclfpga/include/ref/ac_int.h"
+                  , "line":"311"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/lib/oclfpga/include/ref/ac_int.h"
+                  , "line":"311"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"__table"
+          , "id":336
+          , "start":"6.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0.B6"
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":337
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":391
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":271
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":380
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":271
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":381
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Xor"
+          , "id":385
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"And"
+          , "id":387
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/lib/oclfpga/include/ref/ac_int.h"
+                , "line":311
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":388
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/lib/oclfpga/include/ref/ac_int.h"
+                , "line":311
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":389
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":271
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":414
+          , "end":"6.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":271
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":336
+          , "to":337
+        }
+        , {
+          "from":337
+          , "to":380
+        }
+        , {
+          "from":380
+          , "to":381
+        }
+        , {
+          "from":381
+          , "to":385
+        }
+        , {
+          "from":385
+          , "to":387
+        }
+        , {
+          "from":387
+          , "to":388
+        }
+        , {
+          "from":380
+          , "to":389
+        }
+        , {
+          "from":388
+          , "to":389
+        }
+        , {
+          "from":391
+          , "to":414
+        }
+        , {
+          "from":336
+          , "to":414
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1014
+      , "src":"475"
+      , "dst":"479"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ReadoutTask.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"430"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":475
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":430
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":478
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":430
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":479
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":430
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":475
+          , "to":478
+        }
+        , {
+          "from":478
+          , "to":479
+        }
+        , {
+          "from":475
+          , "to":479
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Feedback"
+      , "id":1015
+      , "src":"513"
+      , "dst":"538"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                  , "line":"1209"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                  , "line":"1209"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Feedback"
+          , "id":513
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":535
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":538
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":513
+          , "to":535
+        }
+        , {
+          "from":535
+          , "to":538
+        }
+        , {
+          "from":513
+          , "to":538
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'r'"
+      , "id":1016
+      , "src":"566"
+      , "dst":"570"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"265"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"265"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'r'"
+          , "id":566
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":569
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":570
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":566
+          , "to":569
+        }
+        , {
+          "from":569
+          , "to":570
+        }
+        , {
+          "from":566
+          , "to":570
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'i'"
+      , "id":1017
+      , "src":"581"
+      , "dst":"590"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'i'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"267"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"267"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'i'"
+          , "id":581
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":267
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":586
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":267
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":590
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":267
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":581
+          , "to":586
+        }
+        , {
+          "from":586
+          , "to":590
+        }
+        , {
+          "from":581
+          , "to":590
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1666 @@
+{
+  "name":"loop_attributes"
+  , "id":27000
+  , "nodes":
+  [
+    {
+      "name":"MakeUniqueTask0"
+      , "id":1
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"MakeUniqueTask0.B0"
+          , "id":8
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MakeUniqueTask0.B2"
+          , "id":10
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"10.000000"
+          , "lt":"9.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"MakeUniqueTask0.B1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":28
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"MakeUniqueTask0.B3"
+              , "id":11
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"14.000000"
+              , "lt":"14.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"0"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":33
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+          ]
+        }
+        , {
+          "name":"MakeUniqueTask0.B1"
+          , "id":9
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"latch"
+        }
+      ]
+    }
+    , {
+      "name":"MapKeyTask0"
+      , "id":2
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"MapKeyTask0.B0"
+          , "id":12
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MapKeyTask0.B1"
+          , "id":13
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"205.000000"
+          , "lt":"205.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":69
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+      ]
+    }
+    , {
+      "name":"TraiageMappingTask0"
+      , "id":3
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"TraiageMappingTask0.B0"
+          , "id":14
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"TraiageMappingTask0.B1"
+          , "id":15
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"16.000000"
+          , "lt":"12.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":110
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"TraiageMappingTask0.B2"
+              , "id":16
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Enabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"9.000000"
+              , "lt":"9.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"4"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":116
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"TraiageMappingTask0.B5"
+                  , "id":19
+                  , "af":"650.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lllt":"7.000000"
+                  , "lt":"7.000000"
+                  , "mi":"1"
+                  , "pl":"Yes"
+                  , "tc":"4"
+                  , "tn":"1"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure is disabled due to compressed push-pop"
+                        }
+                      ]
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":117
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                }
+              ]
+            }
+            , {
+              "name":"TraiageMappingTask0.B4"
+              , "id":18
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"0.000000"
+              , "lt":"0.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"4"
+              , "tn":"1"
+              , "type":"latch"
+            }
+          ]
+        }
+        , {
+          "name":"TraiageMappingTask0.B3"
+          , "id":17
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"4.000000"
+          , "lt":"4.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"latch"
+        }
+      ]
+    }
+    , {
+      "name":"AggregateTask0"
+      , "id":4
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"AggregateTask0.B0"
+          , "id":20
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"AggregateTask0.B2"
+          , "id":22
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"n/a"
+          , "ll":"1"
+          , "lllt":"6.000000"
+          , "lt":"6.000000"
+          , "mi":"1"
+          , "pl":"No"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: disabled."
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":158
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"AggregateTask0.B3"
+              , "id":23
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"n/a"
+              , "ll":"2"
+              , "lllt":"7.000000"
+              , "lt":"7.000000"
+              , "mi":"1"
+              , "pl":"No"
+              , "tc":"64"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                    , "line":213
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+            , {
+              "name":"AggregateTask0.B4"
+              , "id":24
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"0.000000"
+              , "lt":"0.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"AggregateTask0.B6"
+              , "id":26
+              , "af":"526.50"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Enabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"10.000000"
+              , "lt":"10.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":166
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+            , {
+              "name":"AggregateTask0.B5"
+              , "id":25
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"5.000000"
+              , "lt":"5.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"AggregateTask0.B7"
+              , "id":27
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"n/a"
+              , "ll":"2"
+              , "lllt":"21.000000"
+              , "lt":"15.000000"
+              , "mi":"1"
+              , "pl":"No"
+              , "tc":"64"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":158
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"AggregateTask0.B9"
+                  , "id":29
+                  , "af":"650.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"n/a"
+                  , "ll":"3"
+                  , "lllt":"6.000000"
+                  , "lt":"6.000000"
+                  , "mi":"1"
+                  , "pl":"No"
+                  , "tc":"4"
+                  , "tn":"1"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                        }
+                      ]
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":200
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                }
+              ]
+            }
+            , {
+              "name":"AggregateTask0.B8"
+              , "id":28
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"6.000000"
+              , "lt":"6.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"64"
+              , "tn":"1"
+              , "type":"latch"
+            }
+          ]
+        }
+        , {
+          "name":"AggregateTask0.B1"
+          , "id":21
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"0.000000"
+          , "lt":"0.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"latch"
+        }
+      ]
+    }
+    , {
+      "name":"MergeAndAggregateTask"
+      , "id":5
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"MergeAndAggregateTask.B0"
+          , "id":30
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MergeAndAggregateTask.B2"
+          , "id":32
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"n/a"
+          , "ll":"1"
+          , "lllt":"6.000000"
+          , "lt":"6.000000"
+          , "mi":"1"
+          , "pl":"No"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: disabled."
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":254
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"MergeAndAggregateTask.B4"
+              , "id":34
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"n/a"
+              , "ll":"2"
+              , "lllt":"7.000000"
+              , "lt":"7.000000"
+              , "mi":"1"
+              , "pl":"No"
+              , "tc":"128"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":255
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+            , {
+              "name":"MergeAndAggregateTask.B3"
+              , "id":33
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"5.000000"
+              , "lt":"5.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"MergeAndAggregateTask.B6"
+              , "id":36
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"n/a"
+              , "ll":"2"
+              , "lllt":"13.000000"
+              , "lt":"7.000000"
+              , "mi":"1"
+              , "pl":"No"
+              , "tc":"0"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":263
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"MergeAndAggregateTask.B7"
+                  , "id":37
+                  , "af":"650.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"n/a"
+                  , "ll":"3"
+                  , "lllt":"12.000000"
+                  , "lt":"6.000000"
+                  , "mi":"1"
+                  , "pl":"No"
+                  , "tc":"4"
+                  , "tn":"1"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                        }
+                      ]
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":264
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                  , "children":
+                  [
+                    {
+                      "name":"MergeAndAggregateTask.B10"
+                      , "id":40
+                      , "af":"650.00"
+                      , "br":"0"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"n/a"
+                      , "ll":"4"
+                      , "lllt":"19.000000"
+                      , "lt":"7.000000"
+                      , "mi":"1"
+                      , "pl":"No"
+                      , "tc":"4"
+                      , "tn":"1"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure: disabled."
+                          , "details":
+                          [
+                            {
+                              "type":"text"
+                              , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                            }
+                          ]
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":295
+                          }
+                        ]
+                      ]
+                      , "type":"loop"
+                      , "children":
+                      [
+                        {
+                          "name":"MergeAndAggregateTask.B11"
+                          , "id":41
+                          , "af":"650.00"
+                          , "br":"1"
+                          , "ci":"0"
+                          , "fo":"Disabled"
+                          , "ii":"n/a"
+                          , "ll":"5"
+                          , "lllt":"17.000000"
+                          , "lt":"17.000000"
+                          , "mi":"1"
+                          , "pl":"No"
+                          , "tc":"0"
+                          , "tn":"1"
+                          , "details":
+                          [
+                            {
+                              "type":"text"
+                              , "text":"Hyper-Optimized loop structure: disabled."
+                              , "details":
+                              [
+                                {
+                                  "type":"text"
+                                  , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                                }
+                              ]
+                            }
+                          ]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                                , "line":211
+                              }
+                            ]
+                          ]
+                          , "type":"loop"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"MergeAndAggregateTask.B18"
+                      , "id":48
+                      , "af":"650.00"
+                      , "br":"1"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"1"
+                      , "ll":"4"
+                      , "lllt":"12.000000"
+                      , "lt":"12.000000"
+                      , "mi":"n/a"
+                      , "pl":"Yes"
+                      , "tc":"4"
+                      , "tn":"1"
+                      , "type":"latch"
+                    }
+                  ]
+                }
+                , {
+                  "name":"MergeAndAggregateTask.B9"
+                  , "id":39
+                  , "af":"650.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lllt":"6.000000"
+                  , "lt":"6.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"4"
+                  , "tn":"1"
+                  , "type":"latch"
+                }
+              ]
+            }
+            , {
+              "name":"MergeAndAggregateTask.B8"
+              , "id":38
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"6.000000"
+              , "lt":"6.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"latch"
+            }
+            , {
+              "name":"MergeAndAggregateTask.B5"
+              , "id":35
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"0.000000"
+              , "lt":"0.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"MergeAndAggregateTask.B13"
+              , "id":43
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"n/a"
+              , "ll":"2"
+              , "lllt":"12.000000"
+              , "lt":"6.000000"
+              , "mi":"1"
+              , "pl":"No"
+              , "tc":"4"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":312
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"MergeAndAggregateTask.B14"
+                  , "id":44
+                  , "af":"650.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"n/a"
+                  , "ll":"3"
+                  , "lllt":"18.000000"
+                  , "lt":"6.000000"
+                  , "mi":"1"
+                  , "pl":"No"
+                  , "tc":"64"
+                  , "tn":"1"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                        }
+                      ]
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                        , "line":313
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                  , "children":
+                  [
+                    {
+                      "name":"MergeAndAggregateTask.B16"
+                      , "id":46
+                      , "af":"650.00"
+                      , "br":"1"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"n/a"
+                      , "ll":"4"
+                      , "lllt":"17.000000"
+                      , "lt":"17.000000"
+                      , "mi":"1"
+                      , "pl":"No"
+                      , "tc":"0"
+                      , "tn":"1"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure: disabled."
+                          , "details":
+                          [
+                            {
+                              "type":"text"
+                              , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                            }
+                          ]
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                            , "line":211
+                          }
+                        ]
+                      ]
+                      , "type":"loop"
+                    }
+                  ]
+                }
+                , {
+                  "name":"MergeAndAggregateTask.B19"
+                  , "id":49
+                  , "af":"650.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lllt":"12.000000"
+                  , "lt":"12.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"64"
+                  , "tn":"1"
+                  , "type":"latch"
+                }
+              ]
+            }
+            , {
+              "name":"MergeAndAggregateTask.B15"
+              , "id":45
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"6.000000"
+              , "lt":"6.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"4"
+              , "tn":"1"
+              , "type":"latch"
+            }
+            , {
+              "name":"MergeAndAggregateTask.B12"
+              , "id":42
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"0.000000"
+              , "lt":"0.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"MergeAndAggregateTask.B17"
+              , "id":47
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Enabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"13.000000"
+              , "lt":"13.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"128"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+          ]
+        }
+        , {
+          "name":"MergeAndAggregateTask.B1"
+          , "id":31
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"0.000000"
+          , "lt":"0.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"latch"
+        }
+      ]
+    }
+    , {
+      "name":"ReadoutTask"
+      , "id":6
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ReadoutTask.B0"
+          , "id":50
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ReadoutTask.B4"
+          , "type":"bb"
+        }
+        , {
+          "name":"ReadoutTask.B1"
+          , "id":51
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"2"
+          , "ll":"1"
+          , "lllt":"8.000000"
+          , "lt":"8.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"8"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":427
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"ReadoutTask.B3"
+              , "id":53
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Enabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"21.000000"
+              , "lt":"21.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"128"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":430
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+          ]
+        }
+        , {
+          "name":"ReadoutTask.B2"
+          , "id":52
+          , "af":"650.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"0.000000"
+          , "lt":"0.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"8"
+          , "tn":"1"
+          , "type":"latch"
+        }
+        , {
+          "name":"ReadoutTask.B4"
+          , "id":54
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"testInputSrcTask"
+      , "id":7
+      , "clk":"Yes"
+      , "fmax":"650.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"testInputSrcTask.B0"
+          , "id":55
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"testInputSrcTask.B10"
+          , "type":"bb"
+        }
+        , {
+          "name":"testInputSrcTask.B1"
+          , "id":56
+          , "af":"650.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"2"
+          , "ll":"1"
+          , "lllt":"9.000000"
+          , "lt":"9.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"9"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"testInputSrcTask.B2"
+          , "id":57
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"5.000000"
+          , "lt":"5.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"testInputSrcTask.B3"
+          , "id":58
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"9.000000"
+          , "lt":"9.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"8"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":263
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"testInputSrcTask.B4"
+              , "id":59
+              , "af":"650.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Enabled"
+              , "ii":"2"
+              , "ll":"2"
+              , "lllt":"24.000000"
+              , "lt":"12.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"65536"
+              , "tn":"1"
+              , "limiter":"3"
+              , "ld":"13"
+              , "le":"testInputSrcTask.B7"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                    , "line":264
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"testInputSrcTask.B6"
+                  , "id":61
+                  , "af":"650.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Enabled"
+                  , "ii":"2"
+                  , "ll":"3"
+                  , "lllt":"11.000000"
+                  , "lt":"11.000000"
+                  , "mi":"2"
+                  , "pl":"Yes"
+                  , "tc":"4"
+                  , "tn":"1"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: enabled."
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                        , "line":267
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                  , "children":
+                  [
+                    {
+                      "name":"testInputSrcTask.B9"
+                      , "id":64
+                      , "af":"650.00"
+                      , "br":"1"
+                      , "ci":"0"
+                      , "fo":"Enabled"
+                      , "ii":"1"
+                      , "ll":"4"
+                      , "lllt":"1066.000000"
+                      , "lt":"1066.000000"
+                      , "mi":"1"
+                      , "pl":"Yes"
+                      , "tc":"4"
+                      , "tn":"1"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure: enabled."
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                            , "line":268
+                          }
+                        ]
+                      ]
+                      , "type":"loop"
+                    }
+                  ]
+                }
+                , {
+                  "name":"testInputSrcTask.B8"
+                  , "id":63
+                  , "af":"650.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lllt":"0.000000"
+                  , "lt":"0.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"4"
+                  , "tn":"1"
+                  , "type":"latch"
+                }
+              ]
+            }
+            , {
+              "name":"testInputSrcTask.B7"
+              , "id":62
+              , "af":"650.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lllt":"12.000000"
+              , "lt":"12.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"65536"
+              , "tn":"1"
+              , "type":"latch"
+            }
+          ]
+        }
+        , {
+          "name":"testInputSrcTask.B5"
+          , "id":60
+          , "af":"650.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"0.000000"
+          , "lt":"0.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"8"
+          , "tn":"1"
+          , "type":"latch"
+        }
+        , {
+          "name":"testInputSrcTask.B10"
+          , "id":65
+          , "af":"650.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+}

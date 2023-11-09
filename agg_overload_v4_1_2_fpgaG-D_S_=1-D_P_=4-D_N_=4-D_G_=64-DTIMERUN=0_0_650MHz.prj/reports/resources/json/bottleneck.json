@@ -1,0 +1,3751 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"__table"
+      , "id":26646
+      , "src":"23644"
+      , "dst":"24446"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"AggregateTask0.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"__table"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                  , "line":"148"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":">>(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"264"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"257"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"258"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                  , "line":"293"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"bit.shuffle(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"162"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"__table"
+          , "id":23644
+          , "start":"6.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24166
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24330
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24099
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24126
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24226
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24154
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24397
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24398
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24244
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24276
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23873
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24329
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24346
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24153
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24213
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24417
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24256
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24200
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23795
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23645
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24125
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24358
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24098
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24345
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24289
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24187
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24416
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24110
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24212
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23969
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24378
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24268
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24390
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24091
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24243
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24211
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24064
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24040
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24085
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24084
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24201
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24415
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24228
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24357
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24328
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24092
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24174
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24404
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24405
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24072
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24142
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24370
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24302
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23855
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24315
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23951
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24369
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":">>"
+          , "id":24052
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24303
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24430
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24141
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24431
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24296
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24193
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24194
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":258
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24288
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23837
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23699
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24063
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23681
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23777
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24295
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23663
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24039
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24267
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24165
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24051
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24313
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24314
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24111
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24109
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24186
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24124
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23987
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23759
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23741
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24432
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23933
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23891
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":257
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":24391
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":162
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24255
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":264
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"bit.shuffle"
+          , "id":24227
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":24446
+          , "end":"6.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":293
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":24099
+          , "to":24126
+        }
+        , {
+          "from":24397
+          , "to":24398
+        }
+        , {
+          "from":24166
+          , "to":24200
+        }
+        , {
+          "from":23644
+          , "to":23645
+        }
+        , {
+          "from":24346
+          , "to":24390
+        }
+        , {
+          "from":24040
+          , "to":24084
+        }
+        , {
+          "from":24200
+          , "to":24201
+        }
+        , {
+          "from":24378
+          , "to":24415
+        }
+        , {
+          "from":24201
+          , "to":24228
+        }
+        , {
+          "from":24289
+          , "to":24328
+        }
+        , {
+          "from":24091
+          , "to":24092
+        }
+        , {
+          "from":23795
+          , "to":24174
+        }
+        , {
+          "from":24404
+          , "to":24405
+        }
+        , {
+          "from":24268
+          , "to":24302
+        }
+        , {
+          "from":23969
+          , "to":24369
+        }
+        , {
+          "from":24302
+          , "to":24303
+        }
+        , {
+          "from":24398
+          , "to":24431
+        }
+        , {
+          "from":24154
+          , "to":24193
+        }
+        , {
+          "from":24193
+          , "to":24194
+        }
+        , {
+          "from":24244
+          , "to":24288
+        }
+        , {
+          "from":24256
+          , "to":24295
+        }
+        , {
+          "from":23645
+          , "to":24039
+        }
+        , {
+          "from":23873
+          , "to":24267
+        }
+        , {
+          "from":23777
+          , "to":24165
+        }
+        , {
+          "from":23663
+          , "to":24051
+        }
+        , {
+          "from":24276
+          , "to":24313
+        }
+        , {
+          "from":24313
+          , "to":24314
+        }
+        , {
+          "from":24110
+          , "to":24111
+        }
+        , {
+          "from":24072
+          , "to":24109
+        }
+        , {
+          "from":24142
+          , "to":24186
+        }
+        , {
+          "from":24085
+          , "to":24124
+        }
+        , {
+          "from":24405
+          , "to":24432
+        }
+        , {
+          "from":24390
+          , "to":24391
+        }
+        , {
+          "from":23855
+          , "to":24255
+        }
+        , {
+          "from":24194
+          , "to":24227
+        }
+        , {
+          "from":24124
+          , "to":24446
+        }
+        , {
+          "from":23644
+          , "to":24446
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":26647
+      , "src":"25395"
+      , "dst":"25399"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ReadoutTask.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"446"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":25395
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":446
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25398
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":446
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25399
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":446
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25395
+          , "to":25398
+        }
+        , {
+          "from":25398
+          , "to":25399
+        }
+        , {
+          "from":25395
+          , "to":25399
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Feedback"
+      , "id":26648
+      , "src":"25433"
+      , "dst":"25471"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                  , "line":"1209"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                  , "line":"1209"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Feedback"
+          , "id":25433
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25468
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25471
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                , "line":1209
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25433
+          , "to":25468
+        }
+        , {
+          "from":25468
+          , "to":25471
+        }
+        , {
+          "from":25433
+          , "to":25471
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'r'"
+      , "id":26649
+      , "src":"25506"
+      , "dst":"25511"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"282"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"311"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'r'"
+          , "id":25506
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":282
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25507
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":311
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25511
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":311
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25506
+          , "to":25507
+        }
+        , {
+          "from":25507
+          , "to":25511
+        }
+        , {
+          "from":25506
+          , "to":25511
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'i'"
+      , "id":26650
+      , "src":"25523"
+      , "dst":"25530"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'i'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"283"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"283"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'i'"
+          , "id":25523
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":283
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25529
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":283
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25530
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":283
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25523
+          , "to":25529
+        }
+        , {
+          "from":25529
+          , "to":25530
+        }
+        , {
+          "from":25523
+          , "to":25530
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'ppln'"
+      , "id":26651
+      , "src":"25543"
+      , "dst":"25550"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'ppln'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"286"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"286"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'ppln'"
+          , "id":25543
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":286
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25549
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":286
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25550
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":286
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25543
+          , "to":25549
+        }
+        , {
+          "from":25549
+          , "to":25550
+        }
+        , {
+          "from":25543
+          , "to":25550
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"bundle"
+      , "id":26652
+      , "src":"457"
+      , "dst":"477"
+      , "concurrency":"3"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"bundle"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"285"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"3"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Basic block: testInputSrcTask.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"286"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: testInputSrcTask.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"286"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: testInputSrcTask.B9(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"287"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"bundle"
+          , "id":457
+          , "start":"11.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":244
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"testInputSrcTask.B6"
+          , "id":61
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":286
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"testInputSrcTask.B9"
+          , "id":64
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":287
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"testInputSrcTask.B8"
+          , "id":63
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":286
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Feedback"
+          , "id":477
+          , "end":"12.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":244
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":61
+          , "to":64
+        }
+        , {
+          "from":64
+          , "to":64
+        }
+        , {
+          "from":64
+          , "to":63
+        }
+        , {
+          "from":457
+          , "to":61
+        }
+        , {
+          "from":63
+          , "to":477
+        }
+        , {
+          "from":457
+          , "to":477
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tup'"
+      , "id":26653
+      , "src":"25674"
+      , "dst":"25706"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B9"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tup'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"287"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                  , "line":"287"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tup'"
+          , "id":25674
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B9"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":287
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25700
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":287
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25706
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B9"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":287
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25674
+          , "to":25700
+        }
+        , {
+          "from":25700
+          , "to":25706
+        }
+        , {
+          "from":25674
+          , "to":25706
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

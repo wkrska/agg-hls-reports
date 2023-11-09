@@ -1,0 +1,1984 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":41
+      , "name":"AggregateTask0"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":50
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":150
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"__table"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":52
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":271
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"__table"
+              , "Start Cycle":"5"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":53
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":283
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"__table"
+              , "Start Cycle":"5"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":54
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":315
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"__table"
+              , "Start Cycle":"2"
+              , "Latency":"2"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":55
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./core.h"
+                , "line":315
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"__table"
+              , "Start Cycle":"4"
+              , "Latency":"2"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":68
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":69
+              , "name":"__table"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"stages.h"
+                    , "line":136
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":70
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":136
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":71
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":73
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"64 bytes"
+                  , "Implemented size":"64 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"128 bits"
+                  , "Bank depth":"4 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Kernel Memory"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/kernel-memory.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":72
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":74
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":110
+      , "name":"MergeAndAggregateTask"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":125
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":250
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":126
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":250
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":128
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":152
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":129
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":213
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"2"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":130
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":213
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"7"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":132
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":152
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":133
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":213
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"2"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":134
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":213
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"7"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":135
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":347
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"4"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":136
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":347
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"4"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":138
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":213
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"1"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":139
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":226
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"6"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":140
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":226
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"table"
+              , "Start Cycle":"11"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":141
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":217
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"table"
+              , "Start Cycle":"11"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":142
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":213
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"table"
+              , "Start Cycle":"1"
+              , "Latency":"5"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":143
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":226
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"7"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":144
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/./stages.h"
+                , "line":226
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"table"
+              , "Start Cycle":"7"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"FPGA Optimization Guide : Load-Store Unit Styles"
+                      , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/load-store-unit-styles.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":165
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":166
+              , "name":"table"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"stages.h"
+                    , "line":246
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":167
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":175
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":191
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":168
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":183
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":199
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":169
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":177
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":193
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":170
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":185
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":201
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":171
+                  , "name":"Bank 4"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":179
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":195
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":172
+                  , "name":"Bank 5"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":187
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":203
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":173
+                  , "name":"Bank 6"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":181
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":197
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":174
+                  , "name":"Bank 7"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"stages.h"
+                        , "line":246
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":189
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":205
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"64 bytes"
+                  , "Implemented size":"64 bytes"
+                  , "Number of banks":"8"
+                  , "Bank width":"64 bits"
+                  , "Bank depth":"1 word"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"FPGA Optimization Guide : Kernel Memory"
+                          , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/kernel-memory.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":176
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":178
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":180
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":182
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":184
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":186
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":188
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":190
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":192
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":194
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":196
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":198
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":200
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":202
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":204
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":206
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":72
+      , "to":55
+    }
+    , {
+      "from":72
+      , "to":54
+    }
+    , {
+      "from":72
+      , "to":52
+    }
+    , {
+      "from":71
+      , "to":72
+    }
+    , {
+      "from":50
+      , "to":74
+    }
+    , {
+      "from":53
+      , "to":74
+    }
+    , {
+      "from":74
+      , "to":73
+    }
+    , {
+      "from":176
+      , "to":129
+    }
+    , {
+      "from":176
+      , "to":130
+    }
+    , {
+      "from":176
+      , "to":133
+    }
+    , {
+      "from":176
+      , "to":134
+    }
+    , {
+      "from":176
+      , "to":135
+    }
+    , {
+      "from":175
+      , "to":176
+    }
+    , {
+      "from":178
+      , "to":129
+    }
+    , {
+      "from":178
+      , "to":130
+    }
+    , {
+      "from":178
+      , "to":133
+    }
+    , {
+      "from":178
+      , "to":134
+    }
+    , {
+      "from":178
+      , "to":135
+    }
+    , {
+      "from":177
+      , "to":178
+    }
+    , {
+      "from":180
+      , "to":129
+    }
+    , {
+      "from":180
+      , "to":130
+    }
+    , {
+      "from":180
+      , "to":133
+    }
+    , {
+      "from":180
+      , "to":134
+    }
+    , {
+      "from":180
+      , "to":135
+    }
+    , {
+      "from":179
+      , "to":180
+    }
+    , {
+      "from":182
+      , "to":129
+    }
+    , {
+      "from":182
+      , "to":130
+    }
+    , {
+      "from":182
+      , "to":133
+    }
+    , {
+      "from":182
+      , "to":134
+    }
+    , {
+      "from":182
+      , "to":135
+    }
+    , {
+      "from":181
+      , "to":182
+    }
+    , {
+      "from":184
+      , "to":136
+    }
+    , {
+      "from":184
+      , "to":138
+    }
+    , {
+      "from":184
+      , "to":142
+    }
+    , {
+      "from":183
+      , "to":184
+    }
+    , {
+      "from":186
+      , "to":136
+    }
+    , {
+      "from":186
+      , "to":138
+    }
+    , {
+      "from":186
+      , "to":142
+    }
+    , {
+      "from":185
+      , "to":186
+    }
+    , {
+      "from":188
+      , "to":136
+    }
+    , {
+      "from":188
+      , "to":138
+    }
+    , {
+      "from":188
+      , "to":142
+    }
+    , {
+      "from":187
+      , "to":188
+    }
+    , {
+      "from":190
+      , "to":136
+    }
+    , {
+      "from":190
+      , "to":138
+    }
+    , {
+      "from":190
+      , "to":142
+    }
+    , {
+      "from":189
+      , "to":190
+    }
+    , {
+      "from":143
+      , "to":192
+    }
+    , {
+      "from":125
+      , "to":192
+    }
+    , {
+      "from":139
+      , "to":192
+    }
+    , {
+      "from":192
+      , "to":191
+    }
+    , {
+      "from":143
+      , "to":194
+    }
+    , {
+      "from":125
+      , "to":194
+    }
+    , {
+      "from":139
+      , "to":194
+    }
+    , {
+      "from":194
+      , "to":193
+    }
+    , {
+      "from":143
+      , "to":196
+    }
+    , {
+      "from":125
+      , "to":196
+    }
+    , {
+      "from":139
+      , "to":196
+    }
+    , {
+      "from":196
+      , "to":195
+    }
+    , {
+      "from":143
+      , "to":198
+    }
+    , {
+      "from":125
+      , "to":198
+    }
+    , {
+      "from":139
+      , "to":198
+    }
+    , {
+      "from":198
+      , "to":197
+    }
+    , {
+      "from":140
+      , "to":200
+    }
+    , {
+      "from":141
+      , "to":200
+    }
+    , {
+      "from":126
+      , "to":200
+    }
+    , {
+      "from":128
+      , "to":200
+    }
+    , {
+      "from":132
+      , "to":200
+    }
+    , {
+      "from":144
+      , "to":200
+    }
+    , {
+      "from":200
+      , "to":199
+    }
+    , {
+      "from":140
+      , "to":202
+    }
+    , {
+      "from":141
+      , "to":202
+    }
+    , {
+      "from":126
+      , "to":202
+    }
+    , {
+      "from":128
+      , "to":202
+    }
+    , {
+      "from":132
+      , "to":202
+    }
+    , {
+      "from":144
+      , "to":202
+    }
+    , {
+      "from":202
+      , "to":201
+    }
+    , {
+      "from":140
+      , "to":204
+    }
+    , {
+      "from":141
+      , "to":204
+    }
+    , {
+      "from":126
+      , "to":204
+    }
+    , {
+      "from":128
+      , "to":204
+    }
+    , {
+      "from":132
+      , "to":204
+    }
+    , {
+      "from":144
+      , "to":204
+    }
+    , {
+      "from":204
+      , "to":203
+    }
+    , {
+      "from":140
+      , "to":206
+    }
+    , {
+      "from":141
+      , "to":206
+    }
+    , {
+      "from":126
+      , "to":206
+    }
+    , {
+      "from":128
+      , "to":206
+    }
+    , {
+      "from":132
+      , "to":206
+    }
+    , {
+      "from":144
+      , "to":206
+    }
+    , {
+      "from":206
+      , "to":205
+    }
+  ]
+}
