@@ -1,0 +1,3119 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"'r'"
+      , "id":26138
+      , "src":"507"
+      , "dst":"509"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"168"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"168"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'r'"
+          , "id":507
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":168
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":508
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":168
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":509
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":168
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":507
+          , "to":508
+        }
+        , {
+          "from":508
+          , "to":509
+        }
+        , {
+          "from":507
+          , "to":509
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'i'"
+      , "id":26139
+      , "src":"520"
+      , "dst":"527"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B2"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'i'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"169"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"169"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'i'"
+          , "id":520
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B2"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":169
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":526
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":169
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":527
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B2"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":169
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":520
+          , "to":526
+        }
+        , {
+          "from":526
+          , "to":527
+        }
+        , {
+          "from":520
+          , "to":527
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'ppln'"
+      , "id":26140
+      , "src":"538"
+      , "dst":"545"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"testInputSrcTask.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'ppln'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"172"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"172"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'ppln'"
+          , "id":538
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":172
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":544
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":172
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":545
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":172
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":538
+          , "to":544
+        }
+        , {
+          "from":544
+          , "to":545
+        }
+        , {
+          "from":538
+          , "to":545
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"__table"
+      , "id":26141
+      , "src":"24089"
+      , "dst":"24661"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"AggregateTask0.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"__table"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./stages.h"
+                  , "line":"137"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"585.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"248"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                  , "line":"265"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":"32"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"__table"
+          , "id":24089
+          , "start":"5.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24563
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24303
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23898
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24090
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24543
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24222
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24386
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24553
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24379
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24012
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24316
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24546
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24450
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24484
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24473
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24463
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24304
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24544
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24396
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24550
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24030
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23934
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24290
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24521
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24512
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24405
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24317
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24567
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23880
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24204
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24539
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24469
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24108
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24462
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23916
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24483
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23976
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24318
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24390
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24459
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24466
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24557
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24327
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24403
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24432
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24477
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24361
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24480
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24389
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24320
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24393
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24072
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24325
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24470
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24384
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24324
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24549
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24352
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24370
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24407
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24560
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":23994
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24310
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24168
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24485
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24404
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24281
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24391
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24126
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24551
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24323
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24186
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":248
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24441
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24299
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24302
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24382
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24398
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24272
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24309
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24313
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24400
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24558
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24383
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24564
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Compare"
+          , "id":24397
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24487
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24556
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24306
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24464
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24476
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24471
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24542
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":24530
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24565
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24478
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":24311
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/./core.h"
+                , "line":265
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":24661
+          , "end":"5.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ofs_install/oneapi/2023.2/compiler/2023.2.1/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                , "line":32
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":24089
+          , "to":24090
+        }
+        , {
+          "from":24303
+          , "to":24304
+        }
+        , {
+          "from":24543
+          , "to":24544
+        }
+        , {
+          "from":24316
+          , "to":24317
+        }
+        , {
+          "from":24222
+          , "to":24539
+        }
+        , {
+          "from":24317
+          , "to":24318
+        }
+        , {
+          "from":24379
+          , "to":24403
+        }
+        , {
+          "from":24450
+          , "to":24480
+        }
+        , {
+          "from":24361
+          , "to":24389
+        }
+        , {
+          "from":24290
+          , "to":24320
+        }
+        , {
+          "from":24318
+          , "to":24320
+        }
+        , {
+          "from":24361
+          , "to":24393
+        }
+        , {
+          "from":24469
+          , "to":24470
+        }
+        , {
+          "from":24521
+          , "to":24549
+        }
+        , {
+          "from":23976
+          , "to":24352
+        }
+        , {
+          "from":24012
+          , "to":24370
+        }
+        , {
+          "from":24379
+          , "to":24407
+        }
+        , {
+          "from":24405
+          , "to":24407
+        }
+        , {
+          "from":24484
+          , "to":24485
+        }
+        , {
+          "from":24403
+          , "to":24404
+        }
+        , {
+          "from":23898
+          , "to":24281
+        }
+        , {
+          "from":24390
+          , "to":24391
+        }
+        , {
+          "from":24550
+          , "to":24551
+        }
+        , {
+          "from":24090
+          , "to":24441
+        }
+        , {
+          "from":23934
+          , "to":24299
+        }
+        , {
+          "from":24352
+          , "to":24382
+        }
+        , {
+          "from":23880
+          , "to":24272
+        }
+        , {
+          "from":24281
+          , "to":24309
+        }
+        , {
+          "from":24281
+          , "to":24313
+        }
+        , {
+          "from":24370
+          , "to":24400
+        }
+        , {
+          "from":24398
+          , "to":24400
+        }
+        , {
+          "from":24557
+          , "to":24558
+        }
+        , {
+          "from":24382
+          , "to":24383
+        }
+        , {
+          "from":24563
+          , "to":24564
+        }
+        , {
+          "from":24396
+          , "to":24397
+        }
+        , {
+          "from":24459
+          , "to":24487
+        }
+        , {
+          "from":24485
+          , "to":24487
+        }
+        , {
+          "from":24272
+          , "to":24306
+        }
+        , {
+          "from":24304
+          , "to":24306
+        }
+        , {
+          "from":24463
+          , "to":24464
+        }
+        , {
+          "from":24450
+          , "to":24476
+        }
+        , {
+          "from":24470
+          , "to":24471
+        }
+        , {
+          "from":24512
+          , "to":24542
+        }
+        , {
+          "from":24204
+          , "to":24530
+        }
+        , {
+          "from":24564
+          , "to":24565
+        }
+        , {
+          "from":24477
+          , "to":24478
+        }
+        , {
+          "from":24310
+          , "to":24311
+        }
+        , {
+          "from":24473
+          , "to":24661
+        }
+        , {
+          "from":24089
+          , "to":24661
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":26142
+      , "src":"25317"
+      , "dst":"25321"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ReadoutTask.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"650.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                  , "line":"367"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":25317
+          , "start":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":367
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":25320
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":367
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":25321
+          , "end":"4.00"
+          , "parent":"_ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/jamesBenchmark/agg-hls/main.cpp"
+                , "line":367
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":25317
+          , "to":25320
+        }
+        , {
+          "from":25320
+          , "to":25321
+        }
+        , {
+          "from":25317
+          , "to":25321
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

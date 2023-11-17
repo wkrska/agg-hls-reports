@@ -1,0 +1,343 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":27229
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"4096 bytes"
+          , "Channels":"4 channels"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel DDR Width (bits)":"512, 512, 512, 512"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"channel 0"
+          , "id":27231
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"512"
+              , "Address Width":"32"
+              , "Latency":"1500"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x0"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 1"
+          , "id":27232
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"512"
+              , "Address Width":"32"
+              , "Latency":"1500"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x100000000"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 2"
+          , "id":27233
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"512"
+              , "Address Width":"32"
+              , "Latency":"1500"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x200000000"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 3"
+          , "id":27234
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"512"
+              , "Address Width":"32"
+              , "Latency":"1500"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x300000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":27230
+      , "parent":"27229"
+      , "bw":"76800.00"
+      , "num_channels":"4"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":27235
+      , "parent":"27229"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":27236
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":27239
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"4"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":27237
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Reads":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":27238
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":27244
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 1"
+              , "id":27245
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 2"
+              , "id":27246
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 3"
+              , "id":27247
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":27242
+      , "parent":"27229"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":27243
+          , "kwidth":"128"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"12"
+              , "Latency":"1044 cycles"
+              , "Width":"128 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"testInputSrcTask"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":288
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":27240
+      , "parent":"27229"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":27241
+          , "kwidth":"128"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"19"
+              , "Latency":"2 cycles"
+              , "Width":"128 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ReadoutTask"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/wkrska/Aggregation/agg-hls/main.cpp"
+                , "line":455
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":27231
+      , "to":27230
+    }
+    , {
+      "from":27230
+      , "to":27231
+    }
+    , {
+      "from":27232
+      , "to":27230
+    }
+    , {
+      "from":27230
+      , "to":27232
+    }
+    , {
+      "from":27233
+      , "to":27230
+    }
+    , {
+      "from":27230
+      , "to":27233
+    }
+    , {
+      "from":27234
+      , "to":27230
+    }
+    , {
+      "from":27230
+      , "to":27234
+    }
+    , {
+      "from":27237
+      , "to":27236
+    }
+    , {
+      "from":27239
+      , "to":27236
+    }
+    , {
+      "from":27236
+      , "to":27230
+    }
+    , {
+      "from":27241
+      , "to":27239
+    }
+    , {
+      "from":27243
+      , "to":27237
+    }
+    , {
+      "from":27230
+      , "to":27244
+    }
+    , {
+      "from":27230
+      , "to":27245
+    }
+    , {
+      "from":27230
+      , "to":27246
+    }
+    , {
+      "from":27230
+      , "to":27247
+    }
+    , {
+      "from":27244
+      , "to":27243
+      , "reverse":1
+    }
+  ]
+}

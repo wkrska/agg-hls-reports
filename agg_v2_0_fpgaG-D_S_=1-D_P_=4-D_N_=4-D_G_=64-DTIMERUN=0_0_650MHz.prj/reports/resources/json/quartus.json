@@ -1,0 +1,98 @@
+{
+    "quartusFitClockSummary"         : {
+        "nodes" : [{
+            "name"              : "Quartus Fitter: Clock Frequency (MHz)",
+            "kernel clock"      : "494.00",
+            "kernel clock fmax" : "494.00",
+            "clock1x"           : "494.00",
+            "clock2x"           : "494.00",
+            "details"           : [{
+                "text" : "The actual frequency of kernel clock is 494.00 MHz after platform PLL adjustment. The maximum frequency for kernel clock is 494.00 MHz. "
+            }],
+            "type"              : "system"
+        }]
+    },
+    "quartusFitResourceUsageSummary" : {
+        "nodes" : [{
+            "type" : "system",
+            "id"   : "1000",
+            "name" : "Quartus Fitter: Kernel System",
+            "alm"  : "85869.2",
+            "reg"  : "247864",
+            "dsp"  : "0",
+            "ram"  : "270",
+            "mlab" : "767"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE0_clES2_E15MakeUniqueTask0",
+            "alm"  : "1692.9",
+            "reg"  : "4149",
+            "dsp"  : "0",
+            "ram"  : "0",
+            "mlab" : "53"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE1_clES2_E11MapKeyTask0",
+            "alm"  : "49999.3",
+            "reg"  : "154447",
+            "dsp"  : "0",
+            "ram"  : "82",
+            "mlab" : "1"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE2_clES2_E19TraiageMappingTask0",
+            "alm"  : "11496.0",
+            "reg"  : "34884",
+            "dsp"  : "0",
+            "ram"  : "0",
+            "mlab" : "253"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE3_clES2_E14AggregateTask0",
+            "alm"  : "5582.0",
+            "reg"  : "16175",
+            "dsp"  : "0",
+            "ram"  : "0",
+            "mlab" : "8"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE4_clES2_E21MergeAndAggregateTask",
+            "alm"  : "1792.7",
+            "reg"  : "4129",
+            "dsp"  : "0",
+            "ram"  : "0",
+            "mlab" : "14"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE5_clES2_E11ReadoutTask",
+            "alm"  : "1139.3",
+            "reg"  : "2469",
+            "dsp"  : "0",
+            "ram"  : "0",
+            "mlab" : "29"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTSZZ4mainENKUlRN4sycl3_V17handlerEE_clES2_E16testInputSrcTask",
+            "alm"  : "4773.0",
+            "reg"  : "10940",
+            "dsp"  : "0",
+            "ram"  : "34",
+            "mlab" : "115"
+        },{
+            "type" : "aclsystem",
+            "id"   : "1001",
+            "name" : "Quartus Fitter: Total Used (Entire System)",
+            "alm"  : "317,951",
+            "reg"  : "664,637",
+            "dsp"  : "0",
+            "ram"  : "1,276"
+        }]
+    }
+}
